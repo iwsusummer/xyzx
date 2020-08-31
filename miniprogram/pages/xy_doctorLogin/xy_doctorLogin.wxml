@@ -1,0 +1,33 @@
+
+<van-cell-group class="form_cla" style="border-radius: 50rpx;">
+  <van-field
+    value=""
+    label="姓名"
+    placeholder="请输入姓名"
+    :rules="[{ required: true, message: '请填写用户名' }]"
+  />
+  <van-field
+    value=""
+    label="身份证号"
+    placeholder="请输入身份证号"
+  />
+  <van-field
+    value=""
+    type="tel" 
+    label="联系电话"
+    placeholder="请输入联系电话"
+  />
+  <!-- <van-field name="uploader" label="文件上传">
+    <template #input>
+      <van-uploader v-model="uploader" />
+    </template>
+  </van-field> -->
+</van-cell-group>
+<van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" />
+
+<view class="btn_cla">
+  <van-button round type="info" block>注册</van-button>
+</view>
+<view class="btn_cla">
+  <van-button round type="default" block>取消</van-button>
+</view>
