@@ -1,0 +1,11 @@
+<!--miniprogram/pages/xy_index/xy_index.wxml-->
+<view class="show-data">
+  <view class="btn_cla">
+    <button type="default" style="padding: 100rpx 0rpx;border-radius: 50rpx;box-shadow: 2px 2px 2px #c1b4b4;background-color: #ef281cd6;color:#FFFFFF">
+      我要咨询
+    </button>
+    <button type="default" style="padding: 100rpx 0rpx;border-radius: 50rpx;box-shadow: 2px 2px 2px #c1b4b4;    background-color: #00d173c7;color:#FFFFFF">
+      我是医生
+    </button>
+  </view>
+</view>

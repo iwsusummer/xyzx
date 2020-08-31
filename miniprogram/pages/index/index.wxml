@@ -55,5 +55,12 @@
     </navigator>
   </view>
 
+    <!-- 湘医首页 -->
+  <view class="uploader">
+    <navigator url="../xy_index/xy_index" open-type="navigate" class="uploader-text">
+      <text>湘医首页</text>
+    </navigator>
+  </view>
+
 
 </view>
