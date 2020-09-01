@@ -1,1 +1,2 @@
 /* miniprogram/pages/xy_jzrhome/xy_jzrhome.wxss */
+@import "../xy_jzr_user/xy_jzr_user.wxss";/*导入xy_jzr_user样式*/

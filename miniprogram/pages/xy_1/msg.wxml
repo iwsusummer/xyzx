@@ -1,0 +1,7 @@
+<!--miniprogram/pages/xy_1/msg.wxml-->
+
+  <text>mxx电话费很贵{{msgd}}</text>
+   <van-field
+    model:value="{{ msgd }}"
+    placeholder="请输入用户名"
+  />

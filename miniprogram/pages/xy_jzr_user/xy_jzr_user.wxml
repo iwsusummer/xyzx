@@ -1,0 +1,45 @@
+<!--miniprogram/pages/xy_jzr_user/xy_jzr_user.wxml-->
+<view class="xy_jzr_user_head_body">
+  <view class="xy_jzr_user_h_v1">
+    <view class="xy_jzr_user_head_view">
+      <van-row>
+        <van-col span="6">
+          <view class="xy_jzr_u_btn_h">
+            <button 
+              open-type="getUserInfo" 
+              bindgetuserinfo="onGetUserInfo"
+              class="userinfo-avatar_jzr_u"
+              size="default"></button>
+          </view>
+          
+        </van-col>
+        <van-col span="12">
+          <view style="margin: 10px">
+            <view style="font-size:20px">
+              <text style="color: #545151;">猫和饭</text>
+            </view>
+            <view>
+              <text style="color:#afafaf;">未认证</text>
+            </view>
+          </view>
+        </van-col>
+        <van-col span="6">
+          <view style="line-height:140rpx;color: #777474;">
+            <van-icon name="info-o" size="26px" style="margin:22px " />
+          </view>
+        </van-col>
+      </van-row>
+    </view>
+  </view>
+</view>
+
+<view style="margin: 10px; border-radius:10px;overflow: hidden;">
+  <van-cell title="收藏" icon="star-o" size="large"/>
+  <van-cell title="关注" icon="like-o" size="large"/>
+  <van-cell title="与我相关" icon="comment-o" size="large"/>
+</view>
+<view style="margin: 10px; border-radius:10px;overflow: hidden;">
+  <van-cell title="设置" icon="setting-o" size="large"/>
+</view>
+<!--<van-icon name="star-o"<van-icon name="comment" /> />  -->
+
