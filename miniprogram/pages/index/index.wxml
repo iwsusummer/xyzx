@@ -64,7 +64,7 @@
 
     <!-- 测试 -->
     <view class="uploader">
-    <navigator url="../xy_shequ/xy_shequ" open-type="navigate" class="uploader-text">
+    <navigator url="../xy_doctorList/xy_doctorList" open-type="navigate" class="uploader-text">
       <text>测试</text>
     </navigator>
   </view>

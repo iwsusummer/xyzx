@@ -19,7 +19,8 @@
     "pages/xy_doctorHome/xy_doctorHome",
     "pages/xy_1/msg",
     "pages/xy_jzr_user/xy_jzr_user",
-    "pages/xy_shequ/xy_shequ"
+    "pages/xy_shequ/xy_shequ",
+    "pages/xy_doctorList/xy_doctorList"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -40,6 +41,7 @@
     "van-col": "@vant/weapp/col/index",
     "van-icon": "@vant/weapp/icon/index",
     "van-cell": "@vant/weapp/cell/index",
-    "van-cell-group": "@vant/weapp/cell-group/index"
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-search": "@vant/weapp/search/index"
   }
 }

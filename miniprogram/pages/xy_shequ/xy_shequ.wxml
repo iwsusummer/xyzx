@@ -1,9 +1,121 @@
 <!--miniprogram/pages/xy_shequ/xy_shequ.wxml-->
-
-<view style="margin:10px; background:red">
-  <text>社区</text>
+<van-search value="{{ value }}" placeholder="请输入搜索关键词" style="margin-bottom: 5px;"/>
+<view id="bodyinfo">
+  
+  <view class="xy_shequ_kuai">
+    <view style="font-weight: 700;">喝牛奶真的会长高高吗</view>
+    <view class="xy_shequ_nik">
+      <button 
+        open-type="getUserInfo" 
+        bindgetuserinfo="onGetUserInfo"
+        class="userinfo-avatar"
+        style="background-image: url(https://7879-xyzx-umkoo-1303013619.tcb.qcloud.la/my-image.png?sign=39c961acb6db3ff161e4712a1af79b59&t=1599053159);width: 50rpx; height: 50rpx; margin: 10rpx;"
+        size="default"
+      ></button>
+      <view class="userinfo-nickname-wrapper" style="color: #989595; font-weight: 700; font-size: 14px;">
+        风中人
+      </view>
+    </view>
+    <view style="margin-top: 5rpx; font-size: 12px; color: #635f5f;">
+      喝牛奶真的会长高吗？很多人对这个话题一直有自己的见解。其实喝牛奶确实有利于青少年的成长发育。但是过多....
+    </view>
+  </view>
+  
+  <view class="xy_shequ_kuai">
+    <view style="font-weight: 700;">喝牛奶真的会长高高吗</view>
+    <view class="xy_shequ_nik">
+      <button 
+        open-type="getUserInfo" 
+        bindgetuserinfo="onGetUserInfo"
+        class="userinfo-avatar"
+        style="background-image: url(https://7879-xyzx-umkoo-1303013619.tcb.qcloud.la/my-image.png?sign=39c961acb6db3ff161e4712a1af79b59&t=1599053159);width: 50rpx; height: 50rpx; margin: 10rpx;"
+        size="default"
+      ></button>
+      <view class="userinfo-nickname-wrapper" style="color: #989595; font-weight: 700; font-size: 14px;">
+        风中人
+      </view>
+    </view>
+    <view style="margin-top: 5rpx; font-size: 12px; color: #635f5f;">
+      喝牛奶真的会长高吗？很多人对这个话题一直有自己的见解。其实喝牛奶确实有利于青少年的成长发育。但是过多....
+    </view>
+  </view>
+  
+  <view class="xy_shequ_kuai">
+    <view style="font-weight: 700;">喝牛奶真的会长高高吗</view>
+    <view class="xy_shequ_nik">
+      <button 
+        open-type="getUserInfo" 
+        bindgetuserinfo="onGetUserInfo"
+        class="userinfo-avatar"
+        style="background-image: url(https://7879-xyzx-umkoo-1303013619.tcb.qcloud.la/my-image.png?sign=39c961acb6db3ff161e4712a1af79b59&t=1599053159);width: 50rpx; height: 50rpx; margin: 10rpx;"
+        size="default"
+      ></button>
+      <view class="userinfo-nickname-wrapper" style="color: #989595; font-weight: 700; font-size: 14px;">
+        风中人
+      </view>
+    </view>
+    <view style="margin-top: 5rpx; font-size: 12px; color: #635f5f;">
+      喝牛奶真的会长高吗？很多人对这个话题一直有自己的见解。其实喝牛奶确实有利于青少年的成长发育。但是过多....
+    </view>
+  </view>
+  
+  <view class="xy_shequ_kuai">
+    <view style="font-weight: 700;">喝牛奶真的会长高高吗</view>
+    <view class="xy_shequ_nik">
+      <button 
+        open-type="getUserInfo" 
+        bindgetuserinfo="onGetUserInfo"
+        class="userinfo-avatar"
+        style="background-image: url(https://7879-xyzx-umkoo-1303013619.tcb.qcloud.la/my-image.png?sign=39c961acb6db3ff161e4712a1af79b59&t=1599053159);width: 50rpx; height: 50rpx; margin: 10rpx;"
+        size="default"
+      ></button>
+      <view class="userinfo-nickname-wrapper" style="color: #989595; font-weight: 700; font-size: 14px;">
+        风中人
+      </view>
+    </view>
+    <view style="margin-top: 5rpx; font-size: 12px; color: #635f5f;">
+      喝牛奶真的会长高吗？很多人对这个话题一直有自己的见解。其实喝牛奶确实有利于青少年的成长发育。但是过多....
+    </view>
+  </view>
+  
+  <view class="xy_shequ_kuai">
+    <view style="font-weight: 700;">喝牛奶真的会长高高吗</view>
+    <view class="xy_shequ_nik">
+      <button 
+        open-type="getUserInfo" 
+        bindgetuserinfo="onGetUserInfo"
+        class="userinfo-avatar"
+        style="background-image: url(https://7879-xyzx-umkoo-1303013619.tcb.qcloud.la/my-image.png?sign=39c961acb6db3ff161e4712a1af79b59&t=1599053159);width: 50rpx; height: 50rpx; margin: 10rpx;"
+        size="default"
+      ></button>
+      <view class="userinfo-nickname-wrapper" style="color: #989595; font-weight: 700; font-size: 14px;">
+        风中人
+      </view>
+    </view>
+    <view style="margin-top: 5rpx; font-size: 12px; color: #635f5f;">
+      喝牛奶真的会长高吗？很多人对这个话题一直有自己的见解。其实喝牛奶确实有利于青少年的成长发育。但是过多....
+    </view>
+  </view>
+  
+  <view class="xy_shequ_kuai">
+    <view style="font-weight: 700;">喝牛奶真的会长高高吗</view>
+    <view class="xy_shequ_nik">
+      <button 
+        open-type="getUserInfo" 
+        bindgetuserinfo="onGetUserInfo"
+        class="userinfo-avatar"
+        style="background-image: url(https://7879-xyzx-umkoo-1303013619.tcb.qcloud.la/my-image.png?sign=39c961acb6db3ff161e4712a1af79b59&t=1599053159);width: 50rpx; height: 50rpx; margin: 10rpx;"
+        size="default"
+      ></button>
+      <view class="userinfo-nickname-wrapper" style="color: #989595; font-weight: 700; font-size: 14px;">
+        风中人
+      </view>
+    </view>
+    <view style="margin-top: 5rpx; font-size: 12px; color: #635f5f;">
+      喝牛奶真的会长高吗？很多人对这个话题一直有自己的见解。其实喝牛奶确实有利于青少年的成长发育。但是过多....
+    </view>
+  </view>
+  
 </view>
-
-
 
 

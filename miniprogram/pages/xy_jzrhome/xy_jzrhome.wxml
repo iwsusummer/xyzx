@@ -3,7 +3,7 @@
   <include src="../xy_1/msg" />
 </block>
 <block wx:elif="{{active==1}}">
-    <view class="bg_red">1</view>
+    <include src="../xy_doctorList/xy_doctorList"/>
 </block>
 <block wx:elif="{{active==2}}">
     <include src="../xy_shequ/xy_shequ"/>

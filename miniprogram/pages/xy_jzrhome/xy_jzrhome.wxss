@@ -1,3 +1,4 @@
 /* miniprogram/pages/xy_jzrhome/xy_jzrhome.wxss */
-@import "../xy_jzr_user/xy_jzr_user.wxss";/*导入xy_jzr_user样式*/
-@import "../xy_shequ/xy_shequ.wxss";/*导入xy_shequ样式*/
+@import "../xy_jzr_user/xy_jzr_user.wxss";/*wqs_20200901导入xy_jzr_user样式*/
+@import "../xy_shequ/xy_shequ.wxss";/*wqs_20200902导入xy_shequ样式*/
+@import "../xy_doctorList/xy_doctorList.wxss";/*wqs_20200902导入xy_doctorList样式*/

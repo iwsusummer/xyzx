@@ -1,1 +1,24 @@
 /* miniprogram/pages/xy_shequ/xy_shequ.wxss */
+
+.xy_shequ_kuai{
+  margin:5px 0;
+  background:#FFF;
+  padding: 15px;
+  height:100px;
+  box-shadow: 1rpx 1rpx 2px #e0e4e6;
+}
+
+#bodyinfo{
+  margin-bottom: 100rpx;
+}
+
+.xy_shequ_nik{
+  height: 70rpx;
+  width: 100%;
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 300ms ease;
+}
