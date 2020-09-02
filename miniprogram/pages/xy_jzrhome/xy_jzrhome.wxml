@@ -6,13 +6,13 @@
     <view class="bg_red">1</view>
 </block>
 <block wx:elif="{{active==2}}">
-    <view class="bg_red">2</view>
+    <include src="../xy_shequ/xy_shequ"/>
 </block>
 <block wx:else>
   <include src="../xy_jzr_user/xy_jzr_user" />
 </block>
 <van-tabbar active="{{ active }}" bind:change="onChange">
-  <van-tabbar-item icon="chat-o">消息</van-tabbar-item>
+  <van-tabbar-item icon="chat-o"  info="5">消息</van-tabbar-item>
   <van-tabbar-item icon="friends-o">专家在线</van-tabbar-item>
   <van-tabbar-item icon="comment-circle-o">社区</van-tabbar-item>
   <van-tabbar-item icon="contact">我</van-tabbar-item>

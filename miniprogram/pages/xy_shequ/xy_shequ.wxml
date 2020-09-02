@@ -1,0 +1,9 @@
+<!--miniprogram/pages/xy_shequ/xy_shequ.wxml-->
+
+<view style="margin:10px; background:red">
+  <text>社区</text>
+</view>
+
+
+
+
