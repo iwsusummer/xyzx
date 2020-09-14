@@ -2,128 +2,18 @@
 
 <view style="margin:10px;margin-bottom: 100rpx;">
   <van-row>
-
-    <van-col span="12">
-      <view class="xy_doclist_docinfo">
-        <view style="text-align: center;padding: 10px;padding-bottom:0">
-          <image style="width: 100px; max-height: 100px;" class="image1" src="../../images/user-unlogin.png" mode="aspectFit"></image>
+    <van-col span="12" wx:for="{{yslb}}" wx:key="this">
+      <navigator url="../im/room/room" open-type="navigate">
+        <view class="xy_doclist_docinfo">
+          <view style="text-align: center;padding: 10px;padding-bottom:0">
+            <image style="width: 100px; max-height: 100px;" class="image1" src="../../images/user-unlogin.png" mode="aspectFit"></image>
+          </view>
+          <view style="padding:0 20px">
+            <view class="xy_doclist_js">医生：{{item.name}}</view>
+            <view class="xy_doclist_js">擅长：{{item.major}}</view>
+          </view>
         </view>
-        <view style="padding:0 20px">
-          <view class="xy_doclist_js">医生：王青松</view>
-          <view class="xy_doclist_js">擅长：胸痛外科</view>
-        </view>
-      </view>
+      </navigator> 
     </van-col>
-    <van-col span="12">
-      <view class="xy_doclist_docinfo">
-        <view style="text-align: center;padding: 10px;padding-bottom:0">
-          <image style="width: 100px; max-height: 100px;" class="image1" src="../../images/user-unlogin.png" mode="aspectFit"></image>
-        </view>
-        <view style="padding:0 20px">
-          <view class="xy_doclist_js">医生：王青松</view>
-          <view class="xy_doclist_js">擅长：胸痛外科</view>
-        </view>
-      </view>
-    </van-col>
-    <van-col span="12">
-      <view class="xy_doclist_docinfo">
-        <view style="text-align: center;padding: 10px;padding-bottom:0">
-          <image style="width: 100px; max-height: 100px;" class="image1" src="../../images/user-unlogin.png" mode="aspectFit"></image>
-        </view>
-        <view style="padding:0 20px">
-          <view class="xy_doclist_js">医生：王青松</view>
-          <view class="xy_doclist_js">擅长：胸痛外科</view>
-        </view>
-      </view>
-    </van-col>
-    <van-col span="12">
-      <view class="xy_doclist_docinfo">
-        <view style="text-align: center;padding: 10px;padding-bottom:0">
-          <image style="width: 100px; max-height: 100px;" class="image1" src="../../images/user-unlogin.png" mode="aspectFit"></image>
-        </view>
-        <view style="padding:0 20px">
-          <view class="xy_doclist_js">医生：王青松</view>
-          <view class="xy_doclist_js">擅长：胸痛外科</view>
-        </view>
-      </view>
-    </van-col>
-    <van-col span="12">
-      <view class="xy_doclist_docinfo">
-        <view style="text-align: center;padding: 10px;padding-bottom:0">
-          <image style="width: 100px; max-height: 100px;" class="image1" src="../../images/user-unlogin.png" mode="aspectFit"></image>
-        </view>
-        <view style="padding:0 20px">
-          <view class="xy_doclist_js">医生：王青松</view>
-          <view class="xy_doclist_js">擅长：胸痛外科</view>
-        </view>
-      </view>
-    </van-col>
-    <van-col span="12">
-      <view class="xy_doclist_docinfo">
-        <view style="text-align: center;padding: 10px;padding-bottom:0">
-          <image style="width: 100px; max-height: 100px;" class="image1" src="../../images/user-unlogin.png" mode="aspectFit"></image>
-        </view>
-        <view style="padding:0 20px">
-          <view class="xy_doclist_js">医生：王青松</view>
-          <view class="xy_doclist_js">擅长：胸痛外科</view>
-        </view>
-      </view>
-    </van-col>
-    <van-col span="12">
-      <view class="xy_doclist_docinfo">
-        <view style="text-align: center;padding: 10px;padding-bottom:0">
-          <image style="width: 100px; max-height: 100px;" class="image1" src="../../images/user-unlogin.png" mode="aspectFit"></image>
-        </view>
-        <view style="padding:0 20px">
-          <view class="xy_doclist_js">医生：王青松</view>
-          <view class="xy_doclist_js">擅长：胸痛外科</view>
-        </view>
-      </view>
-    </van-col>
-    <van-col span="12">
-      <view class="xy_doclist_docinfo">
-        <view style="text-align: center;padding: 10px;padding-bottom:0">
-          <image style="width: 100px; max-height: 100px;" class="image1" src="../../images/user-unlogin.png" mode="aspectFit"></image>
-        </view>
-        <view style="padding:0 20px">
-          <view class="xy_doclist_js">医生：王青松</view>
-          <view class="xy_doclist_js">擅长：胸痛外科</view>
-        </view>
-      </view>
-    </van-col>
-    <van-col span="12">
-      <view class="xy_doclist_docinfo">
-        <view style="text-align: center;padding: 10px;padding-bottom:0">
-          <image style="width: 100px; max-height: 100px;" class="image1" src="../../images/user-unlogin.png" mode="aspectFit"></image>
-        </view>
-        <view style="padding:0 20px">
-          <view class="xy_doclist_js">医生：王青松</view>
-          <view class="xy_doclist_js">擅长：胸痛外科</view>
-        </view>
-      </view>
-    </van-col>
-    <van-col span="12">
-      <view class="xy_doclist_docinfo">
-        <view style="text-align: center;padding: 10px;padding-bottom:0">
-          <image style="width: 100px; max-height: 100px;" class="image1" src="../../images/user-unlogin.png" mode="aspectFit"></image>
-        </view>
-        <view style="padding:0 20px">
-          <view class="xy_doclist_js">医生：王青松</view>
-          <view class="xy_doclist_js">擅长：胸痛外科</view>
-        </view>
-      </view>
-    </van-col>
-    <van-col span="12">
-      <view class="xy_doclist_docinfo">
-        <view style="text-align: center;padding: 10px;padding-bottom:0">
-          <image style="width: 100px; max-height: 100px;" class="image1" src="../../images/user-unlogin.png" mode="aspectFit"></image>
-        </view>
-        <view style="padding:0 20px">
-          <view class="xy_doclist_js">医生：王青松</view>
-          <view class="xy_doclist_js">擅长：胸痛外科</view>
-        </view>
-      </view>
-    </van-col>
-    
   </van-row>
 </view>

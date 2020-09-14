@@ -1,6 +1,5 @@
-/* miniprogram/pages/xy_1/msg.wxss */
-
-.xy_1_vcg{
+/* miniprogram/components/chat_index/chat_index.wxss */
+.chat_index_vcg{
   height: 70px;
   line-height: 70px;
   outline-top: 1px solid #d8d6d6;
@@ -14,7 +13,7 @@
   font-weight: 700;
 }
 
-.xy_1_right{
+.chat_index_right{
   height: 70px;
   line-height: 70px;
   width: 65px;

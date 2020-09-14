@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "chat_i": "/components/chat_index/chat_index",
+    "jzr_me":"/components/jzr_me/jzr_me"
+  }
 }

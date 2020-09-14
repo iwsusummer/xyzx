@@ -1,0 +1,17 @@
+/* components/zjzx/xy_zjzx.wxss */
+
+
+.xy_doclist_docinfo{
+  height: 170px;
+  background:#FFF;
+  margin:5px;
+  box-shadow: 1rpx 1rpx 2px #e0e4e6;
+  border-radius: 10px;
+}
+
+.xy_doclist_js{
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #4890ea;
+}

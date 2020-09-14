@@ -29,6 +29,7 @@ Page({
                 avatarUrl: res.userInfo.avatarUrl,
                 userInfo: res.userInfo
               })
+              console.log(res)
             }
           })
         }
@@ -54,8 +55,9 @@ Page({
       success: res => {
         console.log('[云函数] [login] user openid: ', res.result.openid)
         app.globalData.openid = res.result.openid
+        console.log(res.result)
         wx.navigateTo({
-          url: '../userConsole/userConsole',
+          url: '../userConsloginole/userConsole',
         })
       },
       fail: err => {
@@ -66,6 +68,47 @@ Page({
       }
     })
   },
+
+  // wqs_20200913获取云函数数据
+  getxyzxDB:function(){
+
+    const db = wx.cloud.database()
+    // 查询当前用户所有的 counters
+    let userswheres = {}
+    userswheres.u_role = '1'
+    userswheres.u_flag = '1'
+    db.collection('users').where(userswheres).get({
+      success: res => {
+        // this.setData({
+        //   queryResult: JSON.stringify(res.data, null, 2)
+        // })
+        console.log('[数据库] [查询记录] 成功: ', res.data)
+      },
+      fail: err => {
+        wx.showToast({
+          icon: 'none',
+          title: '查询记录失败'
+        })
+        console.error('[数据库] [查询记录] 失败：', err)
+      }
+    })
+  },
+
+  /**
+   *获取时间
+   */
+  creatTime:function(){
+    const thisTime1 = new Date()
+    const yy = thisTime1.getFullYear()
+    const mm = thisTime1.getMonth()
+    const dd = thisTime1.getDay()
+    const hh = thisTime1.getHours()
+    const m2 = thisTime1.getMinutes()
+    const ss = thisTime1.getSeconds()
+    const strTime = yy+''+mm+''+dd+''+hh+''+m2+''+ss
+    return strTime
+  },
+
 
   // 上传图片
   doUpload: function () {
@@ -81,9 +124,17 @@ Page({
         })
 
         const filePath = res.tempFilePaths[0]
+        const thisTime1 = new Date()
+        const yy = thisTime1.getFullYear()
+        const mm = thisTime1.getMonth()
+        const dd = thisTime1.getDay()
+        const hh = thisTime1.getHours()
+        const m2 = thisTime1.getMinutes()
+        const ss = thisTime1.getSeconds()
+        const strTime = yy+''+mm+''+dd+''+hh+''+m2+''+ss
         
         // 上传图片
-        const cloudPath = 'my-image' + filePath.match(/\.[^.]+?$/)[0]
+        const cloudPath = 'my-image'+ strTime + filePath.match(/\.[^.]+?$/)[0]
         wx.cloud.uploadFile({
           cloudPath,
           filePath,

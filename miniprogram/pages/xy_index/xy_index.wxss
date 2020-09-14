@@ -2,7 +2,7 @@
 /* miniprogram/pages/xy_index/xy_index.wxss */
 page{
   height: 100%;
-  background-image:  url("https://7879-xyzx-umkoo-1303013619.tcb.qcloud.la/my-image.jpg?sign=f8debe6bcd5a6065a16e0e45b42072bb&t=1599021233");
+  background-image:  url("https://7879-xyzx-umkoo-1303013619.tcb.qcloud.la/my-image.jpg?sign=613c6f64b8ba845eb06dd75affb822de&t=1599903317");
   background-repeat:no-repeat;
   background-size:cover;
   -moz-background-size:cover;

@@ -1,0 +1,21 @@
+<!--components/zjzx/xy_zjzx.wxml 20200912 湘医在线专家在线(专家列表) -->
+
+<view style="margin:10px;margin-bottom: 100rpx;">
+  <van-row>
+    <van-col span="12" wx:for="{{yslb}}" wx:key="this">
+      <navigator url="../im/room/room" open-type="navigate">
+        <view class="xy_doclist_docinfo">
+          <view style="text-align: center;padding: 10px;padding-bottom:0">
+            <image wx:if="{{item.head_url && item.head_url != null && item.head_url != ''}}" style="width: 100px; max-height: 100px;border-radius: 50%;" class="image1" src="{{item.head_url}}" mode="aspectFit"></image>
+            <image wx:else style="width: 100px; max-height: 100px;" class="image1" src="../../images/user-unlogin.png" mode="aspectFit"></image>
+          </view>
+          <view style="padding:0 20px">
+            <view class="xy_doclist_js">医生：{{item.u_name}}</view>
+            <view class="xy_doclist_js">擅长：{{item.ys_zy}}</view>
+          </view>
+        </view>
+      </navigator> 
+    </van-col>
+  </van-row>
+</view>
+

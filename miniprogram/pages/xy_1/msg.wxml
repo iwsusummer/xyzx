@@ -1,7 +1,12 @@
 <!--miniprogram/pages/xy_1/msg.wxml-->
 
-  <text>mxx电话费很贵{{msgd}}</text>
-   <van-field
-    model:value="{{ msgd }}"
-    placeholder="请输入用户名"
-  />
+<van-swipe-cell right-width="{{ 65 }}"  wx:for="{{xy_msg}}" wx:key="this">
+  <van-cell-group>
+    <view class="xy_1_vcg">
+      <image style="width:50px;height:50px; margin: 10px" src="{{item.head_url_msg}}" />
+      {{item.nike_msg}}
+    </view>
+  </van-cell-group>
+  <view class="xy_1_right" slot="right">删除</view>
+</van-swipe-cell>
+

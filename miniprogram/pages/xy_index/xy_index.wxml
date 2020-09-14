@@ -8,10 +8,10 @@
     </navigator>
 
     <!-- wqs_20200831进入此页面后做判断，判断其是否注册医生，未注册的话则注册。注册的话跳入xy_doctoeHome中 -->
-    <navigator url="../xy_doctorLogin/xy_doctorLogin" open-type="navigate" class="uploader-text">
-      <button type="default" style="padding: 100rpx 130rpx;border-radius: 50rpx;box-shadow: 2px 2px 2px #c1b4b4;    background-color: #00d173c7;color:#FFFFFF">
+    <!-- <navigator url="../xy_doctorLogin/xy_doctorLogin" open-type="navigate" class="uploader-text"> -->
+      <button type="default" style="padding: 100rpx 130rpx;border-radius: 50rpx;box-shadow: 2px 2px 2px #c1b4b4;    background-color: #00d173c7;color:#FFFFFF" bindtap="onGetOpenid">
         我是医生
       </button>
-    </navigator>
+    <!-- </navigator> -->
   </view>
 </view>

@@ -1,0 +1,40 @@
+<!--miniprogram/components/jzr_me/jzr_me.wxml wqs_20200912 wqs_20200912就诊人的我的-->
+<view class="xy_jzr_user_head_body">
+  <view class="xy_jzr_user_h_v1">
+    <view class="xy_jzr_user_head_view">
+      <van-row>
+        <van-col span="6">
+          <view class="xy_jzr_u_btn_h">
+            <button 
+              open-type="getUserInfo" 
+              bindgetuserinfo="onGetUserInfo"
+              class="userinfo-avatar_jzr_u"
+              style="background-image: url({{headi}})"
+              size="default"></button>
+          </view>
+          
+        </van-col>
+        <van-col span="12">
+          <view style="margin: 10px">
+            <view style="font-size:20px">
+              <text wx:if="{{userinfo != null}}" style="color: #545151;">{{userinfo.nikename}}</text>
+              <text wx:else style="color: #545151;">游客</text>
+            </view>
+            <view>
+              <text wx:if="{{userinfo != null}}" style="color:#afafaf;">已认证</text>
+              <text wx:else style="color:#afafaf;">未认证</text>
+            </view>
+          </view>
+        </van-col>
+      </van-row>
+    </view>
+  </view>
+</view>
+
+<view style="margin: 10px; border-radius:10px;overflow: hidden;">
+  <van-cell icon="smile-o" wx:if="{{userinfo != null && userinfo.u_name != null && userinfo.u_name != ''}}" title="姓名" value="{{userinfo.u_name}}" size="large"/>
+  <van-cell icon="coupon-o" size="large" wx:if="{{userinfo != null && userinfo.u_sex != null && userinfo.u_sex != ''}}" title="性别" value="{{userinfo.u_sex}}"/>
+  <van-cell icon="medal-o" size="large" wx:if="{{userinfo != null && userinfo.ys_zy != null && userinfo.ys_zy != '' && userinfo.u_role =='1' && userinfo.u_role != '' && userinfo.u_flag != null && userinfo.u_flag == '1'}}" title="专业" value="{{userinfo.ys_zy}}"/>
+  <van-cell icon="send-gift-o" size="large" wx:if="{{userinfo != null && userinfo.u_role =='1' && userinfo.u_role != '' && userinfo.u_flag != null && userinfo.u_flag == '1'}}" title="角色" value="医生"/>
+  <van-cell icon="send-gift-o" size="large" wx:else title="角色" value="普通用户"/>
+</view>

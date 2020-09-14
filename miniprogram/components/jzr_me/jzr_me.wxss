@@ -1,0 +1,52 @@
+/* miniprogram/components/jzr_me/jzr_me.wxss */
+
+
+.xy_jzr_user_head_body{
+  height: 200px;
+  margin:17px;
+  background-image:  url("https://7879-xyzx-umkoo-1303013619.tcb.qcloud.la/my-image20208121154.jpg?sign=e97cd254ac2f211b8e03134f81c16244&t=1600089357");
+  background-repeat:no-repeat;
+  background-size:cover;
+  -moz-background-size:cover;
+  background-position: center 0;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.xy_jzr_user_h_v1{
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0),rgba(0,0,0,1));
+}
+
+.xy_jzr_user_head_view{
+  background: #ffffff;
+  width: calc(100% - 20px);
+  height: 70px;
+  padding:10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 10px 10px 0 0;
+}
+
+.xy_jzr_u_btn_h{
+  display: flex;
+  width: calc(100% - 40rpx);
+  height: 140rpx;
+  align-items: center;
+  justify-content: center;  
+  text-align: center;
+}
+.userinfo-avatar_jzr_u{
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%;
+  background-size: cover;
+  background-color: white;
+  /**background-image: url("");*/
+}
+
+/*
+style="background-image: url({{avatarUrl}})"
+*/

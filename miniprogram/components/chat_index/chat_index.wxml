@@ -1,0 +1,12 @@
+<!-- miniprogram/components/chat_index/chat_index.wxml wqs_20200912湘医聊天消息列表 -->
+<van-swipe-cell right-width="{{ 65 }}"  wx:for="{{ltlb}}" wx:key="this">
+  <van-cell-group>
+    <navigator url="../im/room/room" open-type="navigate">
+      <view class="chat_index_vcg">
+        <image style="width:50px;height:50px; margin: 10px" src="{{item.head_url_msg}}" />
+        {{item.nike_msg}}
+      </view>
+    </navigator>
+  </van-cell-group>
+  <view class="chat_index_right" slot="right">删除</view>
+</van-swipe-cell>
